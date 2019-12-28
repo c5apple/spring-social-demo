@@ -25,7 +25,7 @@ public class DemoUser {
 	@Id
 	@GeneratedValue(generator = "uuid2")
 	@GenericGenerator(name = "uuid2", strategy = "uuid2")
-	@Column(unique = true, updatable = false, columnDefinition = "BINARY(16)")
+	@Column(unique = true, updatable = false, columnDefinition = "BINARY(36)")
 	private String userId;
 
 	@Column(unique = true, nullable = false)
@@ -38,7 +38,7 @@ public class DemoUser {
 	private String lastName;
 	private boolean enabled;
 	private boolean accountNonLocked;
-	
+
 	@OneToMany(mappedBy = "demoUser", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	private List<Authorities> authorities;
 }

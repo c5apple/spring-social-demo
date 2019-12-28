@@ -13,7 +13,7 @@ public class FacebookService {
 	private void init() {
 		try {
 			String[] fieldsToMap = { "id", "about", "age_range", "birthday",
-					"context", "cover", "currency", "devices", "education",
+					"cover", "currency", "devices", "education",
 					"email", "favorite_athletes", "favorite_teams",
 					"first_name", "gender", "hometown", "inspirational_people",
 					"installed", "install_type", "is_verified", "languages",
